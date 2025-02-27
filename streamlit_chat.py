@@ -2,7 +2,7 @@ import streamlit as st
 from langchain_openai import ChatOpenAI
 
 st.title("💬 KB_GPT")
-st.write("[ KB_GPT는 ChatGPT 4.0 mini 모델을 사용합니다.]")
+st.write("[ KB_GPT는 ChatGPT 4.0 mini 모델을 사용합니다. ]")
 #session_state에 messages Key값 지정 및 Streamlit 화면 진입 시, AI의 인사말을 기록하기
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
