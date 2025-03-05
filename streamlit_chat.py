@@ -13,7 +13,7 @@ for msg in st.session_state.messages:
 
 
 #챗봇으로 활용할 AI 모델 선언
-chat = ChatOpenAI(model="gpt-4o-mini", temperature=0, api_key = st.secrets["api_key"])
+chat = ChatOpenAI(model="gpt-4o-mini", temperature=0, api_key = st.secrets["api_key"], , messages = st.session_state["messages"])
 
 #chat_input()에 입력값이 있는 경우,
 if prompt := st.chat_input():
